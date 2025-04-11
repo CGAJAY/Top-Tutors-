@@ -22,7 +22,6 @@ const navLinks: NavLink[] = [
 ];
 
 export default function Header() {
-  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState<boolean>(true);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
