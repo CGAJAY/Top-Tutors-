@@ -2,7 +2,6 @@
 "use client";
 
 import Image from "next/image";
-import { Phone } from "lucide-react";
 
 export default function CallToActionSection() {
   return (
