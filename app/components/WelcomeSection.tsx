@@ -28,7 +28,7 @@ export default function WelcomeSection() {
           </p>
 
           <p>
-            At Top Tutors, we understand the challenges students face in meeting the demands of their coursework: College life is complicated. That's why we offer comprehensive assignment help services tailored to your specific needs. Whether you're grappling with a complex essay, a daunting research paper, or a tricky programming assignment, our team of expert tutors and writers is dedicated to delivering high-quality, customized solutions that boost your grades and reduce your stress.
+            At Top Tutors, we understand the challenges students face in meeting the demands of their coursework: College life is complicated. That&apos;s why we offer comprehensive assignment help services tailored to your specific needs. Whether you&apos;re grappling with a complex essay, a daunting research paper, or a tricky programming assignment, our team of expert tutors and writers is dedicated to delivering high-quality, customized solutions that boost your grades and reduce your stress.
           </p>
         </div>
       </div>
