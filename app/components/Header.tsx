@@ -99,8 +99,8 @@ export default function Header() {
 
       {/* Mobile Navigation Panel */}
       <nav
-        className={`md:hidden w-full bg-white text-black flex flex-col items-center justify-center transition-all duration-300 ease-in-out absolute top-full left-0 z-10 ${
-          menuOpen ? "h-[50vh] opacity-100" : "h-0 opacity-0 overflow-hidden"
+        className={`md:hidden w-full bg-white text-black flex flex-col px-10 transition-all duration-300 ease-in-out absolute top-full left-0 z-10 ${
+          menuOpen ? " opacity-100" : "h-0 opacity-0 overflow-hidden"
         }`}
       >
         {navLinks.map((link) => {
