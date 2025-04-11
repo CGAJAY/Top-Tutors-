@@ -5,7 +5,7 @@ export default function WelcomeSection() {
   return (
     <section
       id="welcome"
-      className="w-full bg-white pt-20 pb-12 md:pt-24 md:pb-16"
+      className="w-full bg-white pt-20 pb-2 md:pt-24 md:pb-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Main Heading */}
