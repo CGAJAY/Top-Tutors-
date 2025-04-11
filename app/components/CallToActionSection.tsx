@@ -6,7 +6,6 @@ import Image from "next/image";
 export default function CallToActionSection() {
   return (
     <section
-      id="we-offer"
       className="w-full bg-blue-100 py-4 md:py-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">

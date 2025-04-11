@@ -1,5 +1,6 @@
 import CallToActionSection from './components/CallToActionSection';
 import Header from './components/Header';
+import WeOfferSection from './components/WeOfferSection';
 import WelcomeSection from './components/WelcomeSection';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <WelcomeSection />
       <CallToActionSection />
+      <WeOfferSection />
     </div>
   );
 }
