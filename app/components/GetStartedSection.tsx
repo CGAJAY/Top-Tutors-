@@ -30,7 +30,9 @@ export default function GetStartedSection() {
             The first assignment is totally free!!
           </h2>
           <Link
-            href="#order-form" // Adjust to your form or route
+            href="https://wa.me/+254707919856"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#011b36] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#022a50] transition-colors duration-200 shadow-2xl hover:shadow-[0_10px_20px_rgba(0,0,0,0.4)]"
           >
             ORDER NOW!

@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Review {
+    id: string;
   topic: string;
   rating: number;
   description: string;
@@ -41,30 +42,35 @@ const stats: Stat[] = [
 
 const reviews: Review[] = [
   {
+    id: "Customer-4728403",
     topic: "Assignment",
     rating: 5,
     description:
       "The assignment was perfectly written, delivered on time, and scored an A+. Top Tutors Academy is my go-to service!",
   },
   {
+    id: "Customer-5698324",
     topic: "Lab Report",
     rating: 5,
     description:
       "My lab report was detailed and followed all guidelines. Minor tweak needed, but overall fantastic work!",
   },
   {
+    id: "Customer-2026759",
     topic: "Essay",
     rating: 5,
     description:
       "The essay had excellent arguments and flawless MLA formatting. Quick turnaround and great communication.",
   },
   {
+    id: "Customer-1328654",
     topic: "Resume",
     rating: 5,
     description:
       "My resume was transformed into a professional masterpiece. Landed interviews thanks to Top Tutors!",
   },
   {
+    id: "Customer-9028345",
     topic: "General Service",
     rating: 5,
     description:
@@ -137,7 +143,7 @@ export default function ReviewsSection() {
                 <div key={index} className="min-w-full flex justify-center">
                   <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
                     <h3 className="text-gray-800 text-xl font-semibold mb-2">
-                      {review.topic}
+                      {review.id}
                     </h3>
                     <div className="flex mb-3">
                       {Array.from({ length: Math.floor(review.rating) }).map(
