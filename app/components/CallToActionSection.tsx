@@ -13,7 +13,7 @@ export default function CallToActionSection() {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
           <a
             href="#get-started"
-            className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-yellow-500 hover:shadow-lg transition-all duration-300"
+            className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full shadow-2xl hover:bg-yellow-500 hover:shadow-lg transition-all duration-300"
           >
             Get A Free Assignment
           </a>
@@ -21,7 +21,7 @@ export default function CallToActionSection() {
             href="https://wa.me/+254707919856"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-green-600 hover:shadow-lg transition-all duration-300 flex items-center gap-2"
+            className="bg-green-500 text-white font-semibold py-3 px-6 rounded-full shadow-2xl hover:bg-green-600 hover:shadow-lg transition-all duration-300 flex items-center gap-2"
           >
             <Image
               src="/whatsapp.png"

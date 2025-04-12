@@ -1,4 +1,5 @@
 import CallToActionSection from './components/CallToActionSection';
+import GetStartedSection from './components/GetStartedSection';
 import Header from './components/Header';
 import HowItWorksSection from './components/HowItWorksSection';
 import ReviewsSection from './components/ReviewsSection';
@@ -16,6 +17,7 @@ export default function Home() {
       <HowItWorksSection />
       <WeGuaranteeSection />
       <ReviewsSection />
+      <GetStartedSection />
     </div>
   );
 }
