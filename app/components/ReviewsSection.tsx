@@ -11,16 +11,32 @@ interface Review {
 }
 
 interface Stat {
-  icon: any;
+  icon: React.ReactNode; // Fixed: Replaced 'any' with 'React.ReactNode'
   rating: string;
   topic: string;
 }
 
 const stats: Stat[] = [
-  { icon: <Star className="text-orange-500" size={24} fill="currentColor"/>, rating: "5.0", topic: "Assignment" },
-  { icon: <Star className="text-orange-500" size={24} fill="currentColor"/>, rating: "4.9", topic: "Lab Report" },
-  { icon: <Star className="text-orange-500" size={24} fill="currentColor"/>, rating: "4.9", topic: "Essay" },
-  { icon: <Star className="text-orange-500" size={24} fill="currentColor"/>, rating: "5.0", topic: "Resume" },
+  {
+    icon: <Star className="text-orange-500" size={24} fill="currentColor" />,
+    rating: "5.0",
+    topic: "Assignment",
+  },
+  {
+    icon: <Star className="text-orange-500" size={24} fill="currentColor" />,
+    rating: "4.9",
+    topic: "Lab Report",
+  },
+  {
+    icon: <Star className="text-orange-500" size={24} fill="currentColor" />,
+    rating: "4.9",
+    topic: "Essay",
+  },
+  {
+    icon: <Star className="text-orange-500" size={24} fill="currentColor" />,
+    rating: "5.0",
+    topic: "Resume",
+  },
 ];
 
 const reviews: Review[] = [
@@ -96,8 +112,12 @@ export default function ReviewsSection() {
           {stats.map((stat: Stat, index: number) => (
             <div key={index} className="flex flex-col items-center">
               {stat.icon}
-              <span className="text-gray-700 text-lg font-semibold mt-2">{stat.rating}</span>
-              <span className="text-gray-600 text-base text-center">{stat.topic}</span>
+              <span className="text-gray-700 text-lg font-semibold mt-2">
+                {stat.rating}
+              </span>
+              <span className="text-gray-600 text-base text-center">
+                {stat.topic}
+              </span>
             </div>
           ))}
         </div>
@@ -116,11 +136,20 @@ export default function ReviewsSection() {
               {reviews.map((review: Review, index: number) => (
                 <div key={index} className="min-w-full flex justify-center">
                   <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
-                    <h3 className="text-gray-800 text-xl font-semibold mb-2">{review.topic}</h3>
+                    <h3 className="text-gray-800 text-xl font-semibold mb-2">
+                      {review.topic}
+                    </h3>
                     <div className="flex mb-3">
-                      {Array.from({ length: Math.floor(review.rating) }).map((_, i) => (
-                        <Star key={i} className="text-orange-500" size={20} fill="currentColor" />
-                      ))}
+                      {Array.from({ length: Math.floor(review.rating) }).map(
+                        (_, i) => (
+                          <Star
+                            key={i}
+                            className="text-orange-500"
+                            size={20}
+                            fill="currentColor"
+                          />
+                        )
+                      )}
                       {review.rating % 1 !== 0 && (
                         <Star
                           className="text-orange-500"
@@ -132,7 +161,9 @@ export default function ReviewsSection() {
                         />
                       )}
                     </div>
-                    <h4 className="text-gray-500 text-base font-medium mb-2">{review.topic}</h4>
+                    <h4 className="text-gray-500 text-base font-medium mb-2">
+                      {review.topic}
+                    </h4>
                     <p className="text-gray-600 text-sm">{review.description}</p>
                   </div>
                 </div>
