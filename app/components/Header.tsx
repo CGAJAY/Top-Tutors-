@@ -87,6 +87,7 @@ export default function Header() {
             width={40}
             height={40}
             priority
+            className="rounded-xl"
           />
           <div className="flex flex-col justify-center">
             <div className="font-bold text-orange-500">TOP TUTORS</div>
