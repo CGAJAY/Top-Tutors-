@@ -14,7 +14,7 @@ const guarantees: string[] = [
 
 export default function WeGuaranteeSection() {
   return (
-    <section id="we-guarantee" className="w-full bg-white">
+    <section id="we-guarantee" className="w-full bg-white py-4">
         {/* Image */}
         <div className="relative w-full max-w-3xl mx-auto">
           <Image
