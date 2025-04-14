@@ -31,17 +31,17 @@ export const samples = [
     },
     {
       slug: "sample-7",
-      title: "Interior Design Proposal",
+      title: "Cellphone Launch Plan",
       file: "/samples/sample-7.docx",
     },
     {
       slug: "sample-8",
-      title: "Brand Strategy Document",
+      title: "Arbitration in Labour Relations",
       file: "/samples/sample-8.docx",
     },
     {
       slug: "sample-9",
-      title: "Website Copywriting Sample",
+      title: "The Nehiyawak (Cree)",
       file: "/samples/sample-9.docx",
     },
   ];

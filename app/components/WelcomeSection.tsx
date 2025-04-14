@@ -10,7 +10,7 @@ export default function WelcomeSection() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Main Heading */}
         <h1 className="text-[#011b36] text-3xl sm:text-4xl md:text-5xl font-bold py-4 mb-4">
-          WELCOME TO TOP TUTORS ACADEMY!
+          WELCOME TO TOP TUTORS HUB!
         </h1>
 
         {/* Subheading */}
@@ -23,7 +23,7 @@ export default function WelcomeSection() {
           <p className="mb-6">
             Are looming deadlines causing you stress? Do you find yourself
             struggling to juggle multiple assignments & college life at once? Look
-            no further! Top Tutors Academy is here to rescue you from academic
+            no further! Top Tutors Hub is here to rescue you from academic
             turmoil and pave your way to success.
           </p>
 

@@ -13,12 +13,12 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { name: "Welcome", href: "#welcome" },
-  { name: "We Offer", href: "#we-offer" },
-  { name: "How It Works", href: "#how-it-works" },
-  { name: "We Guarantee", href: "#we-guarantee" },
-  { name: "Reviews", href: "#reviews" },
-  { name: "Get Started", href: "#get-started" },
+  { name: "Welcome", href: "/" },
+  { name: "We Offer", href: "/#we-offer" },
+  { name: "How It Works", href: "/#how-it-works" },
+  { name: "We Guarantee", href: "/#we-guarantee" },
+  { name: "Reviews", href: "/#reviews" },
+  { name: "Get Started", href: "/#get-started" },
   { name: "Samples", href: "/samples" },
 ];
 
@@ -80,9 +80,9 @@ export default function Header() {
     >
       <header className="w-full p-4 flex items-center justify-between bg-[#011b36] md:h-16 relative z-20">
         <Link
-          href="#welcome"
+          href="/"
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
-            handleNavClick(e, "#welcome")
+            handleNavClick(e, "/")
           }
           className="flex items-center space-x-2"
         >
@@ -96,7 +96,7 @@ export default function Header() {
           />
           <div className="flex flex-col justify-center">
             <div className="font-bold text-orange-500">TOP TUTORS</div>
-            <div className="text-orange-500">Academy</div>
+            <div className="text-orange-500">Hub</div>
           </div>
         </Link>
 

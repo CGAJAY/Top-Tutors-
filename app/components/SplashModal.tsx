@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { X } from "lucide-react";
 
 export default function SplashModal() {
   const [show, setShow] = useState(false);
@@ -15,8 +16,16 @@ export default function SplashModal() {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none">
-      <div className="bg-white p-12 rounded-xl text-center max-w-sm shadow-lg mx-auto pointer-events-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-100/40 bg-opacity">
+      <div className="relative bg-white p-12 rounded-xl text-center max-w-sm shadow-lg mx-auto ">
+        <button
+          onClick={() => setShow(false)}
+          className="absolute top-3 right-3 text-gray-500 hover:text-red-500"
+          aria-label="Close Modal"
+        >
+          <X size={20} />
+        </button>
+
         <h2 className="text-xl font-bold mb-4 text-green-700">First Assignment is 100% Free!</h2>
         <p className="mb-6 text-gray-700">Contact us now to get started.</p>
         <div className="flex flex-col gap-3">
@@ -35,12 +44,6 @@ export default function SplashModal() {
             View Our Samples
           </Link>
         </div>
-        <button
-          onClick={() => setShow(false)}
-          className="mt-4 text-sm text-gray-500 border-2 hover:border-none hover:text-white rounded-md hover:bg-red-500 py-2 px-4"
-        >
-          Close
-        </button>
       </div>
     </div>
   );
