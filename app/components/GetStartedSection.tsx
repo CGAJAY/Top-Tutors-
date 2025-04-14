@@ -39,19 +39,6 @@ export default function GetStartedSection() {
           </Link>
         </div>
       </div>
-
-      {/* Third Part: Logo */}
-      <div className="bg-white py-2">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 flex justify-center">
-          <Image
-            src="/logo.jpg"
-            alt="Top Tutors Academy Logo"
-            width={120}
-            height={120}
-            priority
-          />
-        </div>
-      </div>
     </section>
   );
 }

@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
 import SplashModal from './components/SplashModal';
+import Footer from "./components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <SplashModal />
         {children}
+        <Footer />
         <WhatsAppButton />
       </body>
     </html>
