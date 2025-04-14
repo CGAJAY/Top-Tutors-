@@ -10,21 +10,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Top Tutors Academy | Assignment Help & Academic Success",
+  title: "Top Tutors Hub | Assignment Help & Academic Success",
   description:
-    "Ace your assignments with Top Tutors Academy. Expert help, 0% plagiarism, and your first assignment free. Contact us today!",
+    "Ace your assignments with Top Tutors Hub. Expert help, 0% plagiarism, and your first assignment free. Contact us today!",
   openGraph: {
-    title: "Top Tutors Academy | Assignment Help & Academic Success",
+    title: "Top Tutors Hub | Assignment Help & Academic Success",
     description:
-      "Get professional assignment help from Top Tutors Academy. Free first assignment, 24/7 support, and top grades guaranteed!",
+      "Get professional assignment help from Top Tutors Hub. Free first assignment, 24/7 support, and top grades guaranteed!",
     url: "https://toptutors.academy",
-    siteName: "Top Tutors Academy",
+    siteName: "Top Tutors Hub",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Top Tutors Academy",
+        alt: "Top Tutors Hub",
       },
     ],
     locale: "en_US",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Top Tutors Academy | Assignment Help",
+    title: "Top Tutors Hub | Assignment Help",
     description:
-      "Free first assignment! Expert help with assignments, essays, and more at Top Tutors Academy.",
+      "Free first assignment! Expert help with assignments, essays, and more at Top Tutors Hub.",
     images: ["/og-image.jpg"],
   },
   icons: {
