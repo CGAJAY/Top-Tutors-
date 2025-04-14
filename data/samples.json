@@ -1,0 +1,47 @@
+[
+    {
+      "id": "history-essay",
+      "title": "History Essay",
+      "category": "Essay",
+      "excerpt": "This essay examines the causes of the American Civil War, focusing on economic disparities... (~100 words)",
+      "fullText": "This essay examines the causes of the American Civil War, focusing on economic disparities... (~1,000 words)",
+      "keywords": ["history", "essay"],
+      "downloadUrl": "/samples/history-essay.pdf"
+    },
+    {
+      "id": "biology-report",
+      "title": "Biology Report",
+      "category": "Lab Report",
+      "excerpt": "This report details an experiment on enzyme activity under varying temperatures... (~100 words)",
+      "fullText": "This report details an experiment on enzyme activity under varying temperatures... (~1,000 words)",
+      "keywords": ["biology", "report"],
+      "downloadUrl": "/samples/biology-report.pdf"
+    },
+    {
+      "id": "literature-review",
+      "title": "Literature Review",
+      "category": "Essay",
+      "excerpt": "This review synthesizes research on climate change impacts... (~100 words)",
+      "fullText": "This review synthesizes research on climate change impacts... (~1,000 words)",
+      "keywords": ["literature", "review"],
+      "downloadUrl": "/samples/literature-review.pdf"
+    },
+    {
+      "id": "marketing-presentation",
+      "title": "Marketing Presentation",
+      "category": "Presentation",
+      "excerpt": "This presentation outlines a digital marketing strategy for 2025... (~100 words)",
+      "fullText": "Slide 1: Introduction to goals. Slide 2: Social media tactics... (~1,000 words)",
+      "keywords": ["marketing", "presentation"],
+      "downloadUrl": "/samples/marketing-presentation.pdf"
+    },
+    {
+      "id": "business-plan",
+      "title": "Business Plan",
+      "category": "Presentation",
+      "excerpt": "This presentation proposes a startup for sustainable packaging... (~100 words)",
+      "fullText": "Slide 1: Market need for eco-friendly materials... (~1,000 words)",
+      "keywords": ["business", "plan"],
+      "downloadUrl": "/samples/business-plan.pdf"
+    }
+  ]

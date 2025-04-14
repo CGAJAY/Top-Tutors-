@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface NavLink {
   name: string;
@@ -18,12 +19,14 @@ const navLinks: NavLink[] = [
   { name: "We Guarantee", href: "#we-guarantee" },
   { name: "Reviews", href: "#reviews" },
   { name: "Get Started", href: "#get-started" },
+  { name: "Samples", href: "/samples" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState<boolean>(true);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
+  const router = useRouter();
 
   const toggleMenu = (): void => setMenuOpen((prev) => !prev);
   const closeMenu = (): void => setMenuOpen(false);
@@ -34,16 +37,19 @@ export default function Header() {
   ): void => {
     e.preventDefault();
     closeMenu();
-    const targetId = href.replace("#", "");
-    const element = document.getElementById(targetId);
-    if (element) {
-      window.history.pushState(null, "", href); // Update URL hash
-      element.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      const targetId = href.replace("#", "");
+      const element = document.getElementById(targetId);
+      if (element) {
+        window.history.pushState(null, "", href);
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push(href); // Navigate to full route
     }
   };
 
   useEffect(() => {
-    // Set default hash to #welcome on initial load or refresh if hash is empty
     if (!window.location.hash) {
       window.history.replaceState(null, "", "#welcome");
       const welcomeElement = document.getElementById("welcome");
@@ -73,7 +79,6 @@ export default function Header() {
       }`}
     >
       <header className="w-full p-4 flex items-center justify-between bg-[#011b36] md:h-16 relative z-20">
-        {/* Logo and Company Name */}
         <Link
           href="#welcome"
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
@@ -87,7 +92,7 @@ export default function Header() {
             width={40}
             height={40}
             priority
-            className="rounded-xl"
+            className="rounded-b-xl"
           />
           <div className="flex flex-col justify-center">
             <div className="font-bold text-orange-500">TOP TUTORS</div>
@@ -95,7 +100,6 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6">
           {navLinks.map((link: NavLink) => (
             <Link
@@ -111,7 +115,6 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Hamburger Button with glassmorphism */}
         <button
           onClick={toggleMenu}
           className="md:hidden text-orange-500 p-2 rounded-md backdrop-blur-md bg-white/10 shadow-sm"
@@ -121,7 +124,6 @@ export default function Header() {
         </button>
       </header>
 
-      {/* Mobile Navigation Panel */}
       <nav
         className={`md:hidden w-full bg-white text-black flex flex-col px-10 transition-all duration-300 ease-in-out absolute top-full left-0 z-10 ${
           menuOpen ? "h-[50vh] opacity-100" : "h-0 opacity-0 overflow-hidden"
