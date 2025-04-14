@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 border-t py-10 px-6 ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
-        <Link href="/">
+        <Link href="/" className="mx-auto">
           <Image
             src="/logo.jpg"
             alt="Top Tutors Hub Logo"
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center text-sm text-gray-500 mt-6">
+      <div className="mx-auto text-center text-sm text-gray-500 mt-6">
         &copy; {new Date().getFullYear()} Top Tutors Hub. All rights reserved.
       </div>
     </footer>
