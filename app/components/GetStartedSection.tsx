@@ -1,7 +1,6 @@
 // components/GetStartedSection.tsx
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function GetStartedSection() {
@@ -11,7 +10,7 @@ export default function GetStartedSection() {
       <div className="bg-white">
         <div className="flex flex-col items-center justify-center max-w-5xl mx-auto py-4">
           <p className="text-gray-700 text-lg sm:text-xl mb-4 text-center">
-            Don’t let academic stress hold you back. Take the first step towards
+            Don&apos;t let academic stress hold you back. Take the first step towards
             academic success with Ace Assignments. Get in touch with us today and
             experience the difference our assignment help services can make in
             your academic journey!
