@@ -16,7 +16,7 @@ export default function SplashModal() {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-100/40 bg-opacity">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-100/40">
       <div className="relative bg-white p-12 rounded-xl text-center max-w-sm shadow-lg mx-auto ">
         <button
           onClick={() => setShow(false)}
@@ -37,12 +37,7 @@ export default function SplashModal() {
           >
             Chat on WhatsApp
           </a>
-          <Link
-            href="/samples"
-            className="mt-4 text-sm text-white rounded-md bg-blue-500 hover:bg-blue-700 py-2 px-4"
-          >
-            View Our Samples
-          </Link>
+          
         </div>
       </div>
     </div>
