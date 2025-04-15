@@ -2,7 +2,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { X } from "lucide-react";
 
 export default function SplashModal() {
