@@ -91,7 +91,6 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Top Tutors Hub" />
-        <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo.jpg" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
