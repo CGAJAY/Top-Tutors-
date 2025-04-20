@@ -10,14 +10,14 @@ export default function GetStartedSection() {
       <div className="bg-white">
         <div className="flex flex-col items-center justify-center max-w-5xl mx-auto py-4">
           <p className="text-gray-700 text-lg sm:text-xl mb-4 text-center">
-            Don&apos;t let academic stress hold you back. Take the first step towards
-            academic success with Ace Assignments. Get in touch with us today and
-            experience the difference our assignment help services can make in
-            your academic journey!
+            Don&apos;t let academic stress hold you back. Take the first step toward achieving
+            your academic goals with expert assignment help you can count on. Get in touch with
+            us today and experience the difference professional support can make in your academic
+            journey!
           </p>
           <p className="text-gray-700 text-lg sm:text-xl text-center">
-            At Top Tutors, we worry about Books & Assignments so that you don’t
-            have to.
+          At Top Tutors, we take care of the books and assignments, so you don&apos;t 
+          have to. Focus on what matters most — we&apos;ve got the rest covered.
           </p>
         </div>
       </div>
