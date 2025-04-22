@@ -60,6 +60,12 @@ export const metadata: Metadata = {
     },
     icons: {
         icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
+        apple: "/logo.jpg",
+        other: {
+            rel: "icon",
+            url: "/favicon.ico",
+        },
     },
     robots: {
         index: true,
@@ -95,9 +101,17 @@ export default function RootLayout({
                     content="width=device-width, initial-scale=1.0"
                 />
                 <meta name="author" content="Top Tutors Hub" />
+
+                {/* Apple Touch Icon */}
                 <link rel="apple-touch-icon" href="/logo.jpg" />
+
+                {/* Web Manifest */}
                 <link rel="manifest" href="/site.webmanifest" />
 
+                {/* Favicon (standard for most browsers) */}
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+
+                {/* Structured Data for Google */}
                 <Script
                     id="structured-data"
                     type="application/ld+json"
@@ -117,7 +131,7 @@ export default function RootLayout({
                 {children}
                 <Footer />
                 <WhatsAppButton />
-                <Analytics /> {/* Enables Vercel Analytics */}
+                <Analytics />
             </body>
         </html>
     );
