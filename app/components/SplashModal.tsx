@@ -25,7 +25,7 @@ export default function SplashModal() {
                 </button>
 
                 <h2 className="text-xl font-bold mb-4 text-green-700">
-                    To 30% off Price for the first Assignements
+                    30% off Price for the First Assignements
                 </h2>
                 <p className="mb-6 text-gray-700">
                     Contact us now to get started.
