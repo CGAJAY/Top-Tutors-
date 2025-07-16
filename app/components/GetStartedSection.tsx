@@ -28,7 +28,7 @@ export default function GetStartedSection() {
             <div className="bg-orange-400 py-12 md:py-16">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
-                        First Assignment is 30% off!!
+                        First Assignment is 30% off Price!!
                     </h2>
                     <Link
                         href="https://wa.me/+254707919856"
